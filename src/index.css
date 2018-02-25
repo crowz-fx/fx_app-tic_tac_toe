@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+#wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #bdc3c7;
+}
+
+#header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#header h2, #header div.returnLink {
+    width: 100%;
+}
+
+div.returnLink {
+    display: flex;
+    flex-direction: row;
+}
+
+div.returnLink a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #9b59b6;
+    padding: 5px 5px;
+    font-size: 1.3em;
+    vertical-align: middle;
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+}
+
+div.returnLink a:hover {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+#header h2 {
+    font-size: 2.1em;
+}
+
+.board {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.board-row {
+    width: 100%;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    padding: 5px;
+    font-size: 1.05em;
+}
+
+#refresh:hover {
+    cursor: pointer;
+}
+
+button[class^="square"] {
+    float: left;
+    border: 2px solid #000;
+    background: transparent;
+    font-size: 8em;
+    font-weight: bold;
+    min-height: 26vh;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 33.33%;
+}
+
+button[class^="square"]:focus {
+    outline: none;
+}
+
+#footer {
+    padding: 7px 3px;
+}
