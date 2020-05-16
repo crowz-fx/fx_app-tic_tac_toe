@@ -16,7 +16,7 @@ class TicTacToe extends Component {
 				<div id="header">
 	                <h2>Tic Tac Toe!</h2>
 	                <div className="returnLink">
-	                	<a id="link" href="/apps">&lt;-- return to app central</a>
+	                	<a id="link" href="/portfolio/apps">&lt;-- return to app central</a>
                 	</div>
 	            </div>
 				<Board />
