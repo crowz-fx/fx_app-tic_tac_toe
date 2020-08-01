@@ -11,8 +11,6 @@ RUN ls -la
 
 RUN which npm
 
-RUN npm
-
 #RUN rm -rf package-lock.json
 RUN npm install -dd
 
