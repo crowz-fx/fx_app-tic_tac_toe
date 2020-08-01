@@ -21,7 +21,7 @@ FROM ${FROM_IMAGE}:${IMG_TYPE}
 
 WORKDIR /var/www/
 
-COPY --from=0 /tmp/react-build/build/* .
+COPY --from=0 /tmp/react-build/build/ ./
 COPY conf/nginx.conf /etc/nginx
 
 CMD ["nginx", "-g 'daemon off;"]
