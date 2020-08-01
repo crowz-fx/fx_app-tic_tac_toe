@@ -3,7 +3,7 @@ FROM ${NODE_IMAGE}
 
 WORKDIR /tmp/react-build
 
-COPY public/ src/ package*.json ./
+COPY public src package.json ./
 
 RUN ls -la
 
