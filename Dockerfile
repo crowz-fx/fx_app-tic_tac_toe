@@ -24,4 +24,4 @@ WORKDIR /var/www/
 COPY --from=0 /tmp/react-build/build/ ./
 COPY conf/nginx.conf /etc/nginx
 
-CMD ["nginx", "-g 'daemon off;"]
+CMD ["nginx", "-g daemon off;"]
