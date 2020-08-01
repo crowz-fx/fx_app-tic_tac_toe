@@ -5,8 +5,16 @@ WORKDIR /tmp/react-build
 
 COPY public/ src/ package*.json ./
 
+RUN ls -la
+
+RUN which npm
+
+RUN npm
+
 #RUN rm -rf package-lock.json
-RUN npm install && npm run build
+RUN npm install
+
+RUN npm run build
 
 
 # Now build on top of the nginx image as source code is built
