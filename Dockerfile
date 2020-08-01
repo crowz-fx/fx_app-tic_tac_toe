@@ -11,10 +11,10 @@ RUN ls -la
 
 RUN which npm
 
-RUN npm -dd
+RUN npm
 
 #RUN rm -rf package-lock.json
-RUN npm install
+RUN npm install -dd
 
 RUN npm run build
 
