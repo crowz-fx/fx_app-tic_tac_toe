@@ -3,13 +3,15 @@ FROM ${NODE_IMAGE}
 
 WORKDIR /tmp/react-build
 
-COPY public src package.json ./
+COPY public/ ./public/
+COPY src/ ./src/ 
+COPY package.json .
 
 RUN ls -la
 
 RUN which npm
 
-RUN npm
+RUN npm -dd
 
 #RUN rm -rf package-lock.json
 RUN npm install
