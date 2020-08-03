@@ -19,7 +19,7 @@ RUN npm run build
 # Now build on top of the nginx image as source code is built
 FROM ${FROM_IMAGE}:${IMG_TYPE}
 
-WORKDIR /var/www/
+WORKDIR /var/www/apps/tictactoe
 
 COPY --from=0 /tmp/react-build/build/ ./
 COPY conf/nginx.conf /etc/nginx
