@@ -1,7 +1,6 @@
 # top half is to run the build and generate the prod build
 ARG NODE_IMAGE
 ARG FROM_IMAGE
-ARG IMG_TYPE
 FROM ${NODE_IMAGE}
 
 WORKDIR /tmp/react-build
@@ -17,7 +16,7 @@ RUN npm run build
 #---------------------------------
 
 # Now build on top of the nginx image as source code is built
-FROM ${FROM_IMAGE}:${IMG_TYPE}
+FROM ${FROM_IMAGE}
 
 WORKDIR /var/www/apps/tictactoe
 
