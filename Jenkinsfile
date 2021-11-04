@@ -1,0 +1,1 @@
+dockerBuildPipeline([name: "tic-tac-toe", from: "nginx:stable"])
